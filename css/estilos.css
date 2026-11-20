@@ -1,12 +1,98 @@
+:root{
+  --verde:#09C846;
+  --naranja:#e28011;
+  --cielo:#d8d8f2;
+  --azul:#260fbc;
+  --blanco:#fcfcfc;
+
+}
+
 body {
-  background-color: #8fd4fa;
-  color: DarkBlue;
+  background-color: var(--cielo); 
+  /* background-image: url('../img/guarderia.jpg');  imagen de fondo*/
+  color: var(--azul);
 }
 
 header {
-  background-color: green;
+  background-color: rgb(73, 228, 73);
+  display: flexbox;
+  align-items: center;
+}
+header img{
+  width: 300px;
+  height: 200px;
+}
+nav ul{
+  list-style: none;
+  text-align: right;
+}
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+}
+nav a{
+  color: var(--azul);
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15pt;
+
+}
+img{
+  max-width: 100%;
+}
+#inicio{
+  text-align: center;
+}
+#inicio img{
+  width: 500px;
+  height: 600px;
+  border-radius: 30%;
+
 }
 
+h1,h2,h3{
+  color: var(--naranja);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15pt;
+  }
+
+  #titulo{
+    font-size: 4;
+  }
+  article{
+    background-color: var(--blanco);
+    padding: 20px 100px;
+    margin: 30px;
+    border: 2px solid var(--verde);
+    border-radius: 15px;
+
+  }
+  article img{
+    border-radius: 15px;
+
+  }
+.boton{
+  display: inline-block;
+  background-color: var(--naranja);
+  color:var(--azul) ;
+  padding: 12px 12px 12px 12px;
+  margin: 20px 0px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15pt;
+}
+.boton:hover{
+  background-color: var(--cielo);
+  color: var(--verde);
+
+}
 p {
   font-size: 20pt;
 }
@@ -17,7 +103,7 @@ p {
 }
 
 .parrafo{
-    background-color: DarkViolet;
+    background-color: rgb(0, 179, 211);
 }
 
 #servicios article img{
